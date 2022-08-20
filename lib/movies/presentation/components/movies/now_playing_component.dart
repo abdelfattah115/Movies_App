@@ -1,14 +1,11 @@
-import 'dart:ffi';
-
 import 'package:animate_do/animate_do.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:movies/core/utils/media_query_values.dart';
-import 'package:shimmer/shimmer.dart';
 
+import '../../../../core/utils/media_query_values.dart';
 import '../../../../core/global/theme/colors/app_color.dart';
 import '../../../../core/utils/values.dart';
 import '../../../../core/utils/strings.dart';
@@ -31,18 +28,7 @@ class NowPlayingComponent extends StatelessWidget {
           case RequestState.loading:
             return SizedBox(
               height: context.height,
-              child: Shimmer.fromColors(
-                baseColor: AppColor.greyShimmer,
-                highlightColor: AppColor.lightGreyShimmer,
-                child: Container(
-                  height: context.height,
-                  width: context.width,
-                  decoration: BoxDecoration(
-                    color: Colors.black,
-                    borderRadius: BorderRadius.circular(AppSize.s8),
-                  ),
-                ),
-              ),
+              child: SpinKitFadingCircle(color: AppColor.lightGrey,),
             );
           case RequestState.loaded:
             return FadeIn(
