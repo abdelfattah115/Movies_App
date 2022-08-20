@@ -1,16 +1,17 @@
-# my_movies
+# Movies App - Clean Architecture
 
-A new Flutter project.
+## Usage Libraries
+ - equatable.
+ - dio.
+ - dartz.
+ - flutter_bloc.
+ - get_it.
+ - animate_do.
+ - cached_network_image.
+ - carousel_slider.
+ - google_fonts.
+ - shimmer.
+ - flutter_spinkit.
 
-## Getting Started
+### Video Screen
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
